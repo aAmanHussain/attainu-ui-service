@@ -1,0 +1,239 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page > h2 {
+  margin-bottom: 0rem;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 2.5rem;
+  box-shadow: rgb(0 0 0 / 16%) 0px 0px 8px 2px;
+  background-color: rgb(253, 253, 253);
+}
+
+.footer {
+  padding: 0.25rem 1.25rem;
+  background-color: rgb(253, 253, 253);
+}
+
+
+.form-wrapper {
+  width: 20%;
+  padding: 1rem 2rem;
+  margin: 1rem 0rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 1.5rem;
+}
+
+.form-wrapper .input-item {
+  display: block;
+}
+
+.form-wrapper .input-item label {
+  display: block;
+  margin: 0rem 0rem 0.25rem;
+  font-weight: bold;
+}
+
+.form-wrapper .input-item input,
+.form-wrapper .input-item select {
+  display: block;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-wrapper .input-item input[type='submit'] {
+  color: var(--white);
+  background: var(--black);
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-list {
+  padding: 0.5rem;
+  list-style: none;
+}
+
+.nav-list li {
+  margin: 0rem 0.25rem;
+}
+
+.nav-list li > a {
+  color: var(--black);
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.nav-list li:hover > a {
+  font-weight: bold;
+}
+
+.item-wrapper {
+  width: 80%;
+}
+
+.item-wrapper .card-item {
+  width: calc(25% - 4rem);
+  margin: 1rem 2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.item-wrapper .card-item > ins {
+  display: none;
+  /* width: 5rem;
+  height: 5rem;
+  display: block;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--attain-blue);
+  text-align: center;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  font-size: 0.75rem;
+  font-weight: bold; */
+}
+
+.animated-spinner {
+  width: 5rem;
+  animation: spinner infinite 5s linear;
+}
+
+.card-item img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.search-form-wrapper {
+  width: 80%;
+  box-shadow: none;
+}
+
+.search-form-wrapper .wrapper {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.search-form-wrapper .wrapper .input-item {
+  width: 100%;
+  height: 100%;
+  padding: 0rem 1rem;
+}
+
+
+@media (max-width: 575.98px) {
+  .search-form-wrapper {
+    width: 100%;
+  }
+  .search-form-wrapper .wrapper {
+    width: 100%;
+    display: block;
+  }
+  .card-item img {
+    width: 100%;
+  }
+  .item-wrapper {
+    width: 100%;
+  }
+  .item-wrapper .card-item {
+    width: calc(100% - 4rem);
+    margin: 0.5rem 1rem;
+  }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .search-form-wrapper {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  .search-form-wrapper .wrapper {
+    width: 100%;
+    display: block;
+  }
+  .card-item img {
+    width: 100%;
+  }
+  .item-wrapper {
+    width: 100%;
+  }
+  .item-wrapper .card-item {
+    width: calc(100% - 4rem);
+    margin: 0.5rem 1rem;
+  }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .search-form-wrapper {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  .search-form-wrapper .wrapper {
+    width: 100%;
+    display: block;
+  }
+  .card-item img {
+    width: 100%;
+  }
+  .item-wrapper .card-item {
+    width: calc(50% - 2rem);
+    margin: 0.5rem 1rem;
+  }
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .item-wrapper .card-item {
+    width: calc(50% - 2rem);
+    margin: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*
+  Custom CSS for the Application
+*/
+:root {
+  --black: #505050;
+  --white: #ffffff;
+  --red: #ec4654;
+  --green: #38882f;
+  --attain-blue: #0969da;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden auto;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: var(--red);
+}
+
+.text-danger {
+  color: var(--red);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+a {
+  color: var(--attain-blue);
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
